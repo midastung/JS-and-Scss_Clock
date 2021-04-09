@@ -1,0 +1,215 @@
+.clock, .clock__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
+  color: #fff;
+  background-color: #cbbcf6;
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background-color: #a06ee1;
+  -webkit-box-shadow: 8px 20px 15px #0000007d;
+          box-shadow: 8px 20px 15px #0000007d;
+}
+
+.clock__inner {
+  width: 90%;
+  height: 90%;
+  border-radius: 100%;
+  position: relative;
+  border: 2px solid #212F0B;
+  background-color: #421b9b;
+}
+
+.clock .scale {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clock .scale__unit {
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.clock .scale__unit:nth-child(5n+1) {
+  height: 24px;
+  width: .5px;
+  background-color: #CEF9E2;
+}
+
+.clock .scale .twenty, .clock .scale .twelve {
+  font-size: 10px;
+  position: absolute;
+  left: -5px;
+}
+
+.clock .scale .twenty {
+  top: 25px;
+}
+
+.clock .scale .twelve {
+  top: -20px;
+}
+
+.clock .hand {
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  -webkit-transform-origin: 50% 4px;
+          transform-origin: 50% 4px;
+}
+
+.clock .hand-hour {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 8px;
+  height: 65px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.clock .hand-hour::before {
+  content: '';
+  display: block;
+  background-color: #421b9b;
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.clock .hand-min {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 8px;
+  height: 80px;
+  background-color: #CEF9E2;
+  border-radius: 4px;
+}
+
+.clock .hand-min::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #000;
+}
+
+.clock .hand-min::before {
+  content: '';
+  display: block;
+  height: 30px;
+  width: 1px;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.clock .hand-sec {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 10px;
+  height: 100px;
+  z-index: -1;
+}
+
+.clock .hand-sec .dec {
+  background-color: #cbbcf6;
+  position: absolute;
+  width: 1px;
+}
+
+.clock .hand-sec .dec1 {
+  height: 30px;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.clock .hand-sec .dec2 {
+  height: 10px;
+  left: 25%;
+  top: 29px;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+}
+
+.clock .hand-sec .dec3 {
+  height: 20px;
+  left: 45%;
+  top: 37px;
+  -webkit-transform: rotate(-24deg);
+          transform: rotate(-24deg);
+}
+
+.clock .hand-sec .dec4 {
+  height: 13px;
+  left: 68%;
+  top: 55px;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
+}
+
+.clock .hand-sec .dec5 {
+  height: 40px;
+  left: 53%;
+  top: 67px;
+}
+
+.clock .hand-sec .dec5 .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border: .5px solid #cbbcf6;
+  position: absolute;
+  top: 39px;
+  left: -3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock .hand-sec .dec5 .dot::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #b1ff00;
+}
+/*# sourceMappingURL=style.css.map */

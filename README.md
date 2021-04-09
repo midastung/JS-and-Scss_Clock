@@ -15,11 +15,7 @@ transform-origin(100, 100); /* 從物件的右下角開始 */
 2. transform: 設定物件的變形種類
 常用包括translate(位移)、scale(縮放)、rotate(旋轉)、skew(傾斜)等，還有結合 scale、skew、translate 的 matrix(scale X, scale Y, skew X, skew Y, move X, move Y)
 
-3. transition-timing-function: 設定物件不同變形期間的變形速度
-```css
-transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
-```
-4.nth-child(n)
+3.nth-child(n)
 ```css
 tr:nth-child(3n+1){
 	background-color:#69C;

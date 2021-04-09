@@ -20,6 +20,12 @@ transform-origin(100, 100); /* 從物件的右下角開始 */
 transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 ```
 4.nth-child(n)
+```css
+tr:nth-child(3n+1){
+	background-color:#69C;
+	}
+```
+![image](http://csscoke.com/wp-content/uploads/2013/09/table_nth-child3n.png)
 ![image](http://csscoke.com/wp-content/uploads/2013/09/nth-child_demo.png)
 
 ### SCSS屬性

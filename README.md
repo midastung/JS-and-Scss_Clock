@@ -1,1 +1,1 @@
-# JS-and-Scss_Clock-
+# JS-and-Scss_Clock

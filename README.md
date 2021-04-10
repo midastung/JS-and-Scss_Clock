@@ -1,7 +1,7 @@
 # JS-and-Scss_Clock
 此小作品是練習運用SCSS和JS做出一個小時鐘  
 
-1.專案教學網址：https://dylan237.github.io/js-2f-clock.html  
+1.教學網址：https://dylan237.github.io/js-2f-clock.html  
 2.Demo : https://midastung.github.io/JS-and-Scss_Clock/index.html
 
 ## 以下內容是實作中的重點整理:
